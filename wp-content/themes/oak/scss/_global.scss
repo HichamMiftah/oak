@@ -1,0 +1,49 @@
+/*------------generals start------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: termina, sans-serif;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1360px;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+body.menu_opened {
+    overflow-y: hidden;
+}
+
+/*------------generals END------------*/

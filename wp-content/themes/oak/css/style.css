@@ -1,0 +1,210 @@
+/*------------generals start------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: termina, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  background-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1360px;
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+body.menu_opened {
+  overflow-y: hidden;
+}
+
+/*------------generals END------------*/
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 30px 70px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+header nav .menu-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  z-index: 9;
+  font-family: termina, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #375481;
+  position: relative;
+}
+header nav .menu-btn > span {
+  font-size: 0.833vw;
+}
+header nav .menu-btn > span#close {
+  display: none;
+}
+header nav .menu-btn .menu-btn__icon {
+  width: 1.111vw;
+  height: 16px;
+  position: relative;
+}
+header nav .menu-btn .menu-btn__icon div {
+  display: flex;
+  background-color: #375481;
+  width: 100%;
+  height: 0.069vw;
+  position: absolute;
+  left: 0;
+  transition: 0.4s ease-in-out;
+}
+header nav .menu-btn .menu-btn__icon div:first-child {
+  top: 0;
+}
+header nav .menu-btn .menu-btn__icon div:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+header nav .menu-btn .menu-btn__icon div:last-child {
+  bottom: 0;
+}
+header nav .menu-container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(55, 84, 129, 0);
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  padding: 14px;
+  transition: 0.5s ease-in-out;
+}
+header nav .menu-container .menu-content {
+  border-radius: 10px;
+  height: 100%;
+  width: 36.736vw;
+  background-color: #F3EFEC;
+  box-shadow: 0px 10px 30px rgba(55, 84, 129, 0.6);
+  position: relative;
+  left: -100%;
+  transition: 1s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+header nav .menu-container .menu-content .top {
+  padding-top: 2.878vw;
+}
+header nav .menu-container .menu-content .top .lang-switch {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 6px;
+}
+header nav .menu-container .menu-content .top .lang-switch li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.819vw;
+  height: 2.431vw;
+  text-transform: uppercase;
+  background-color: rgba(55, 84, 129, 0.1);
+  border: 1px solid rgba(55, 84, 129, 0.4);
+  border-radius: 24px;
+  font-weight: 500;
+  font-size: 0.833vw;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #375481;
+  transition: 0.4s ease-in-out;
+}
+header nav .menu-container .menu-content .top .lang-switch li a:hover {
+  background-color: #375481;
+  font-weight: 600;
+  color: #fff;
+}
+header nav .menu-container .menu-content .top .lang-switch li.active a {
+  background-color: #375481;
+  font-weight: 600;
+  color: #fff;
+}
+header nav .logo svg {
+  width: 2.399vw;
+  height: 4.514vw;
+}
+header nav .social {
+  display: flex;
+  gap: 0.486vw;
+}
+header nav .social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5vw;
+  height: 2.5vw;
+  border: 1px solid #375481;
+  border-radius: 100%;
+}
+header.opened nav .menu-btn > span#open {
+  display: none;
+}
+header.opened nav .menu-btn > span#close {
+  display: block;
+}
+header.opened nav .menu-btn .menu-btn__icon div:first-child {
+  top: 7px;
+  transform: rotate(45deg);
+}
+header.opened nav .menu-btn .menu-btn__icon div:nth-child(2) {
+  left: -100%;
+  opacity: 0;
+}
+header.opened nav .menu-btn .menu-btn__icon div:last-child {
+  bottom: 8px;
+  transform: rotate(-45deg);
+}
+header.opened nav .menu-container {
+  visibility: visible;
+  background-color: rgba(55, 84, 129, 0.4);
+}
+header.opened nav .menu-container .menu-content {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+/*---------------------404 start---------------------*/
+/*---------------------404 End-----------------------*//*# sourceMappingURL=style.css.map */

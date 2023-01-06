@@ -1,0 +1,50 @@
+# Wordpress - ignore core, configuration, examples, uploads and logs.
+# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+
+# Core
+#
+# Note: if you want to stage/commit WP core files
+# you can delete this whole section/until Configuration.
+/wp-admin/
+/wp-content/cache/*
+/wp-content/wflogs/*
+/wp-content/index.php
+/wp-content/languages
+/wp-content/plugins/
+/wp-content/themes/index.php
+/wp-includes/
+/index.php
+/license.txt
+/readme.html
+/wp-activate.php
+/wp-blog-header.php
+/wp-comments-post.php
+/wp-cron.php
+/wp-links-opml.php
+/wp-load.php
+/wp-login.php
+/wp-mail.php
+/wp-settings.php
+/wp-signup.php
+/wp-trackback.php
+/wp-config.php
+
+/xmlrpc.php
+
+# Example themes
+/wp-content/themes/twentytwentyone/
+/wp-content/themes/twentytwentythree/
+/wp-content/themes/twentytwentytwo/
+/wp-content/themes/actify-wp/
+/wp-content/uploads/
+
+# Composer files
+/vendor
+/src
+/composer*.lock
+
+# Log files
+*.log
+
+/.env
+.DS_Store
